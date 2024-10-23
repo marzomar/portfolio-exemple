@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+    
+    h1, h2, #btnVideo{
+    
+    color: white;
+    
+    font-family: "Creepster", system-ui;
+    
+    font-weight: bold;
+    
+    text-align: center;
+    
+    }
+    
+    h1 {
+    font-size: 6rem;
+    }
+    
+    h2 { font-size: 3rem; }
+    
+    #btnVideo{
+    font-size: 1.5rem;
+    background: 0;
+    border: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    }
+
+    .page {
+        width: 100vw;
+        height: 100vh;
+        padding-top: 6vh;
+    }
+
+    #nav {
+        width: 60%;
+        height: 10%;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    #about {
+        width: 100%;
+        height: 50%;
+        background-color: aquamarine;
+        display: flex;
+    }
+    #about-left {
+        width: 50%;
+        height: 100%;
+
+        background-image: url("./image/anonymous-1536x1024.jpeg");
+        background-size: cover;
+    }
+    #about-right {
+        width: 50%;
+        height: 100%;
+        background-color: #3F51B5;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+    #about-txt {
+        width: 80%;
+    }
+    .name {
+        width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .nametxt {
+        text-align: center;
+    color: white;
+    font-size: 28px;
+    font-family: sans-serif;
+    
+    }
+    .page1 {
+        position: relative;
+    }
+    .fleche {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .reseaux {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    }
+
+    .iconimage {
+        width: 50px;
+    }
