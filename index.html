@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./image/requinlogo-removebg-preview.png" type="image/x-icon">
 </head>
-<body>
+<body id="body">
     <video id="background-video" autoplay loop muted>
-
-        <source src="./image/119266-717347129_small.mp4" type="video/mp4">
-        
+        <source id="video-source" src="./image/119266-717347129_small.mp4" type="video/mp4">
     </video>
 
         <div class="content">
 
            <div id="page1" class="page">
             <div id="nav">
+                <button class="mode" onclick="jour()">Jour/Nuit</button>
                 <a href="#" class="liens">Home</a>
                 <a href="#page2" class="liens">About</a>
                 <a href="" class="liens">Projet</a>
@@ -27,12 +27,11 @@
                 <p class="nametxt">Développeur web junior</p>
             </div>
             
-            <div class="fleche">
+            <div class="fleche pulsate-fwd">
                 <a href="#page2">
                     <img src="./image/icons8-flèche-bas-80 (1).png" alt="">
                 </a> 
             </div>
-        div.reseau>a.icon*3>img.iconimage
                 <div class="reseaux">
                     <a href="https://marzomar.github.io" class="icon">
                         <img src="./image/icons8-ouvrir-le-cv-96.png" alt="" class="iconimage">
@@ -48,25 +47,76 @@
 
            <div id="page2" class="page">
             <h1 class="title">About me</h1>
-            <div id="about">
-                <div id="about-left">
-                    <img src="" alt="" id="about-img">
+                <div id="about">
+                    <div id="about-left">
+                        <img src="" alt="" id="about-img">
+                    </div>
+                    <div id="about-right">
+                        <p id="about-txt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quibusdam harum explicabo id magnam sint tempora nisi minus laborum? Est dignissimos sit non doloribus laboriosam quibusdam quas vero officiis sed!
+                        </p>
+                    </div>
+                </div>  
+           </div>
+           <div class="page">
+            <h1 class="title">Skills</h1>
+            <div class="skills">
+                <div class="skillsenfant">
+                    <img src="./image/icons8-flèche-bas-80.png" alt="" class="skillimg">
+                    <h3 class="skilltitle">Maquette Figma</h3>
+                    <p class="skilltxt">Creation de maquette web sur le logiciel en ligne Figma</p>
                 </div>
-                <div id="about-right">
-                    <p id="about-txt">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quibusdam harum explicabo id magnam sint tempora nisi minus laborum? Est dignissimos sit non doloribus laboriosam quibusdam quas vero officiis sed!
-                    </p>
+                <div class="skillsenfant">
+                    <img src="./image/icons8-flèche-bas-80.png" alt="" class="skillimg">
+                    <h3 class="skilltitle">Maquette Figma</h3>
+                    <p class="skilltxt">Creation de maquette web sur le logiciel en ligne Figma</p>
+                </div>
+                <div class="skillsenfant">
+                    <img src="./image/icons8-flèche-bas-80.png" alt="" class="skillimg">
+                    <h3 class="skilltitle">Maquette Figma</h3>
+                    <p class="skilltxt">Creation de maquette web sur le logiciel en ligne Figma</p>
                 </div>
             </div>
-
-            
            </div>
-
            <div class="page">
-
-            <h1 class="title">Page3</h1>
+            <h1 class="title">Projet</h1>
+            <div class="projet">
+                <div class="projetenfant">
+                    <h1 class="projettitle">Jeux</h1>
+                </div>
+                <div class="projetenfant">
+                    <div class="projetpetit">
+                        <h1 class="projettitle">Todo</h1>
+                    </div>
+                    <div class="projetpetit">
+                        <h1 class="projettitle">En cours </h1>
+                    </div>
+                </div>
+                <div class="projetenfant">
+                    <h1 class="projettitle">Maquette</h1>
+                </div>
+            </div>
            </div>
-        
+           <div class="page">
+            <h1 class="title">Contact</h1>
+            <!-- modify this form HTML and place wherever you want your form -->
+<form
+action="https://formspree.io/f/xeoqoray"
+method="POST"
+>
+<label>
+  Your email:
+  <input type="email" name="email">
+</label>
+<label>
+  Your message:
+  <textarea name="message"></textarea>
+</label>
+<!-- your other form fields go here -->
+<button type="submit">Send</button>
+</form>
+           </div>
+           
         </div>
 
     <script src="main.js"></script>
